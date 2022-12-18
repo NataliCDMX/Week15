@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 500px;
+            border: 1px solid;
+
+        }
+
+        #errorMessage {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Создание учетной записи</h1>
+    <div id="wrapper">
+
+        <form name="Form" action="#" method="post">
+            <label for="Name1" class="Name">1. Имя</label>
+            <p>
+                <input type="text" name="name1" id="Name1" placeholder="Имя" autofocus> </p>
+            <label for="surName" class="surName">2. Фамилия</label>
+            <p>
+                <input type="text" name="surname" id="surName" placeholder="Фамилия" autofocus> </p>
+
+            <label for="email" class="email">3. Дополнительный адрес электронной почты</label>
+            <p>
+                <input type="text" name="email" id="email" placeholder="Почта" autofocus> </p>
+
+            <label for="contacts" class="contacts">4. Контактный номер телефона</label>
+            <p>
+                <input type="text" name="contacts" id="contacts" placeholder="Номер телефона" autofocus> </p>
+
+            <label for="password" class="password">5. Пароль</label>
+            <p>
+                <input type="text" name="password" id="password" placeholder="не менее 8 символов" autofocus> </p>
+
+            <p class="photo">6. Фото профиля</p>
+            <p>
+                <input type="file" id="photo" name="photo"> </p>
+            <hr>
+            <div id="errorMessage"></div>
+            <p>Готово!</p>
+            <p>
+                <input type="button" name="save" class="btn" value="Сохранить" onclick="clickMe()"> </p>
+        </form>
+    </div>
+
+
+    <script src="./ej2Form.js"></script>
+</body>
+
+</html>

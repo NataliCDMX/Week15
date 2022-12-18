@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="wrapper">Укажите подходящую тему экрана</div>
+        <select name="theme" id="theme" onchange="show()">
+            <option disabled selected="selected">Выберите из списка</option>
+            <option value="dark">Темная</option>
+            <option value="light">Светлая</option>
+            <option value="coloredLight">Цветная в светлых тонах</option>
+            <option value="coloredDark">Цветная в темных тонах</option>
+        </select>
+
+
+        <div id="result">
+            <img src="" id="catImage">
+        </div>
+    </div>
+
+    <script src="./ej3Theme.js"></script>
+</body>
+
+</html>
